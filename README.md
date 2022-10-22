@@ -27,10 +27,10 @@ What doesn't work / cannot test / haven't tested:
 ## Installation
   1. Follow Dortania's OpenCore guide [here](https://dortania.github.io/OpenCore-Install-Guide/) up until "Adding base OpenCore files"
   2. Drag the folders from this repo into the ``EFI/OC`` folder. Select replace, NOT merge.
-  3. Follow the [Fixing iServices section of Dortania's OpenCore Post-Install Guide](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#using-gensmbios). Apply the changes to ``config.plist > PlatformInfo > Generic``. Ignore the ``DataHub``, ``PlatformNVRAM``, and ``SMBIOS`` dictionaries within ``PlatformInfo``; only ``Generic`` matters.
-  4. Go into the BIOS and configure these settings: ![bios settings](https://i.imgur.com/ScfQBMF.png)
-  5. Boot into the installer and configure your SSD. APFS is supported and recommended, although I have not tested the full disk encryption version.
-  6. Install, go through the onboarding, and download [MountEFI.](https://github.com/corpnewt/MountEFI) Copy your EFI folder from your USB to your SSD.
+  3. Go into the BIOS and configure these settings: ![bios settings](https://i.imgur.com/ScfQBMF.png)
+  4. Boot into the installer and configure your SSD. APFS is supported and recommended, although I have not tested the full disk encryption version.
+  5. Install, go through the onboarding, and download [MountEFI.](https://github.com/corpnewt/MountEFI) Copy your EFI folder from your USB to your SSD.
+  6. Follow the [Fixing iServices section of Dortania's OpenCore Post-Install Guide](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#using-gensmbios). Apply the changes to ``config.plist > PlatformInfo > Generic``. Ignore the ``DataHub``, ``PlatformNVRAM``, and ``SMBIOS`` dictionaries within ``PlatformInfo``; only ``Generic`` matters.
 
 ## Credit to:
   - [Mapomme on Olarila](https://www.olarila.com/topic/23224-monterey-on-lenovo-x1-yoga-3rd-gen/) for making the base of this folder.
