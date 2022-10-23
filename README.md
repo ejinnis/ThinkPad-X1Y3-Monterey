@@ -7,11 +7,11 @@ A complete OpenCore folder for hackintoshing the Lenovo ThinkPad X1 Yoga Gen 3 (
 Most things work great such as:
   - Keyboard w/ Special Functions
   - TrackPad incl. full multi-touch gestures
-  - TrackPoint (minus scrolling, middle button is middle click without an app like [Smart Scroll](https://www.marcmoini.com/sx_en.html))
+  - TrackPoint (see notes)
   - USB-C data & charging
   - Battery monitoring
   - Webcam / Mic
-  - WiFi (see below) & Bluetooth
+  - WiFi (see notes) & Bluetooth
   - SD Card Reader
   - iServices (see installation)
 
@@ -22,7 +22,10 @@ What doesn't work / cannot test / haven't tested:
   - HiDPI (I have a 1080p model so it's not needed)
   - Thunderbolt 3
   
-**WiFi works without flaw, except on multi access-point networks where you move between different APs, such as a school where you are moving room-to-room. The fix is easy though, just go to SysPrefs and renew the DHCP lease.**
+## Notes on making things work / Disclaimers
+  - Sleep mode kinda sucks. The OS doesn't tell your CPU to quiet down when the lid is closed, which leads to excess heat and power draw. This can probably be fixed with some tweaking to the ``config.plist``that I just haven't figured out yet.
+  - WiFi works great, except after you wake from sleep. It will randomly disconnect whenever it feels like. It's not too annoying, because you can just go to the WiFi menu and reconnect. On multi access-point networks, such as a school, you may have to renew your DHCP lease as you move between the APs as well.
+  - Out of the box, the TrackPoint works great minus scrolling. The middle button is middle click without an app like [Smart Scroll](https://www.marcmoini.com/sx_en.html) to disable that.
 
 ## Installation
   1. Follow Dortania's OpenCore guide [here](https://dortania.github.io/OpenCore-Install-Guide/) up until "Adding base OpenCore files"
