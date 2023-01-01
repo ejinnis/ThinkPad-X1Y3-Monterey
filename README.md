@@ -1,4 +1,7 @@
 # OpenCore for macOS Monterey on ThinkPad X1 Yoga 3 (2018)
+
+# Archived because I sold my laptop. Feel free to fork and modify when stuff breaks!
+
 A complete OpenCore folder for hackintoshing the Lenovo ThinkPad X1 Yoga Gen 3 (2018) with Monterey (specifically Model 20LF). Based on OpenCore 0.8.5
 ![](https://i.imgur.com/Zjjm45P.png)
 
